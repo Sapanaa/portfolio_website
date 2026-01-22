@@ -85,17 +85,17 @@ export const servicesData = [
 export const projects = [
   {
     id: 1,
-    name: "Mobile Accessories E-commerce",
+    name: "Shoe Shop E-commerce",
     description:
       "An online store specializing in phone accessories including cases, chargers, cables, and power banks with MagSafe compatibility.",
-    href: "",
-    image: "/assets/projects/mobile-accessories-store.jpg",
+    href: "https://e-commerce-pied-zeta-25.vercel.app/",
+    image: "/images/shoe.png",
     bgImage: "/assets/backgrounds/blanket.jpg",
     frameworks: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
       { id: 3, name: "Node.js" },
-      { id: 4, name: "MongoDB" },
+      { id: 4, name: "PostgreSQL" },
       { id: 5, name: "Tailwind CSS" },
     ],
   },

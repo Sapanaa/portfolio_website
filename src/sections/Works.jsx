@@ -115,6 +115,7 @@ const Works = () => {
         {projects.map((project, index) => (
           <div
             key={project.id}
+          
             id="project"
             className="relative flex flex-col gap-1 py-5 cursor-pointer group md:gap-0"
             onMouseEnter={() => handleMouseEnter(index)}
@@ -125,9 +126,14 @@ const Works = () => {
               ref={(el) => {
                 overlayRefs.current[index] = el;
               }}
-              className="absolute inset-0 hidden md:block duration-200 bg-black -z-10 clip-path"
+              className="absolute inset-0 hidden md:block bg-black -z-10 clip-path pointer-events-none"
             />
-
+<a
+    href={project.href}
+    target="_blank"
+    rel="noopener noreferrer"
+    className="relative z-10 block"
+  >
             {/* title */}
             <div className="flex justify-between px-10 text-black transition-all duration-500 md:group-hover:px-12 md:group-hover:text-white">
               <h2 className="lg:text-[32px] text-[26px] leading-none">
@@ -147,7 +153,10 @@ const Works = () => {
                   {framework.name}
                 </p>
               ))}
+
             </div>
+            
+              </a>
             {/* mobile preview image */}
             <div className="relative flex items-center justify-center px-10 md:hidden h-[400px]">
               <img
