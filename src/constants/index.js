@@ -161,17 +161,16 @@ export const projects = [
   },
   {
     id: 6,
-    name: "Digital Game Store",
+    name: "Landing Page for Bar",
     description:
-      "A gaming platform featuring discounted titles, top sellers, and genre-based browsing.",
-    href: "",
-    image: "/assets/projects/game-store.jpg",
+      "Landing page for a trendy bar featuring drink menus, event info, and reservation options.",
+    href: "https://bar-landing-page-git-main-sapanaas-projects.vercel.app/",
+    image: "/images/bar.png",
     bgImage: "/assets/backgrounds/curtains.jpg",
     frameworks: [
-      { id: 1, name: "Svelte" },
+      { id: 1, name: "Vite" },
       { id: 2, name: "Node.js" },
-      { id: 3, name: "MongoDB" },
-      { id: 4, name: "Chakra UI" },
+      { id: 3, name: "Tailwind CSS" },
     ],
   },
 ];
